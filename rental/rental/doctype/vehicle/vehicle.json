@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-10-28 20:18:37.108861",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "make",
+  "year",
+  "colour",
+  "get_summary",
+  "summary",
+  "column_break_ixzj",
+  "model",
+  "licence_plate",
+  "read_only",
+  "is_published",
+  "route",
+  "cover_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Make",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Data",
+   "label": "Colour"
+  },
+  {
+   "fieldname": "column_break_ixzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "licence_plate",
+   "fieldtype": "Data",
+   "label": "Licence Plate"
+  },
+  {
+   "fieldname": "read_only",
+   "fieldtype": "Read Only",
+   "label": "Read Only"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is_published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach",
+   "label": "Cover Image"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2024-11-06 12:36:51.262862",
+ "modified_by": "Administrator",
+ "module": "Rental",
+ "name": "Vehicle",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Cars",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

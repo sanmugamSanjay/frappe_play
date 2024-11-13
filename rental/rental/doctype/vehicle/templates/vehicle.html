@@ -1,0 +1,15 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+{%if doc.cover_image %}
+    <img src="{{doc.cover_image}}" />
+{% else %}
+    <span>No image found</span>
+
+{% endif %}
+
+<a class="btn btn-info" href="/order-booking/new?vehicle={{doc.name}}"> Book Now</a>
+{% endblock %}
+
+<!-- this is a sample default web page template -->
